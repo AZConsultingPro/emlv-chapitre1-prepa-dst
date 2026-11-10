@@ -1,0 +1,1256 @@
+{
+  "version": "1.0",
+  "terms": [
+    {
+      "id": "actif",
+      "label": "Actif",
+      "acronym": "",
+      "aliases": [],
+      "definition": "Ensemble des ressources contrôlées par l’entreprise, issues d’événements passés et dont elle attend des avantages économiques.",
+      "context": "Au bilan, il regroupe notamment les immobilisations, les stocks, les créances et les disponibilités.",
+      "example": "Un ordinateur utilisé, des produits en stock et une facture client à encaisser sont des actifs.",
+      "misconception": "Le total de l’actif n’est pas l’argent disponible en banque.",
+      "related": [
+        "bilan",
+        "stock",
+        "creance-client"
+      ]
+    },
+    {
+      "id": "passif",
+      "label": "Passif",
+      "acronym": "",
+      "aliases": [],
+      "definition": "Dans la présentation du bilan, ensemble des financements figurant en face de l’actif : capitaux propres et dettes.",
+      "context": "Dans un sens comptable plus strict, les passifs comprennent les obligations envers les tiers ; les capitaux propres sont présentés séparément.",
+      "example": "Un emprunt de 100 k€ est une dette ; un apport de 100 k€ appartient aux capitaux propres.",
+      "misconception": "Toutes les lignes du passif ne sont pas des dettes remboursables.",
+      "related": [
+        "bilan",
+        "capitaux-propres",
+        "dette"
+      ]
+    },
+    {
+      "id": "bilan",
+      "label": "Bilan",
+      "acronym": "",
+      "aliases": [],
+      "definition": "État financier qui présente les actifs, les capitaux propres et les dettes à une date donnée.",
+      "context": "Il répond à la question : que contrôle l’entreprise et comment ces ressources sont-elles financées à la clôture ?",
+      "example": "Le bilan au 31 décembre présente les stocks encore détenus ce jour-là.",
+      "misconception": "Un bilan est une photographie à une date ; les ventes annuelles sont dans le compte de résultat.",
+      "related": [
+        "actif",
+        "passif",
+        "compte-resultat"
+      ]
+    },
+    {
+      "id": "compte-resultat",
+      "label": "Compte de résultat",
+      "acronym": "",
+      "aliases": [],
+      "definition": "État qui rapproche les produits et les charges rattachés à une période pour déterminer un bénéfice ou une perte.",
+      "context": "Il décrit la formation du résultat sur douze mois dans les exercices proposés.",
+      "example": "1 000 k€ de produits moins 950 k€ de charges donnent 50 k€ de bénéfice.",
+      "misconception": "Un produit n’est pas toujours déjà encaissé et une charge n’est pas toujours déjà payée.",
+      "related": [
+        "produit",
+        "charge",
+        "resultat-net"
+      ]
+    },
+    {
+      "id": "tableau-flux",
+      "label": "Tableau des flux de trésorerie",
+      "acronym": "",
+      "aliases": [
+        "tableau de flux",
+        "tableau des flux"
+      ],
+      "definition": "État qui explique la variation de trésorerie entre deux dates par les flux d’exploitation, d’investissement et de financement.",
+      "context": "Il rapproche la trésorerie d’ouverture de celle de clôture et permet de comprendre d’où vient ou où part l’argent.",
+      "example": "Flux d’exploitation +60, investissement −90 et financement +40 : trésorerie en hausse de 10 k€.",
+      "misconception": "Un bénéfice de 60 k€ ne garantit pas un flux d’exploitation de 60 k€.",
+      "related": [
+        "flux-exploitation",
+        "flux-investissement",
+        "flux-financement"
+      ]
+    },
+    {
+      "id": "produit",
+      "label": "Produit",
+      "acronym": "",
+      "aliases": [
+        "produits"
+      ],
+      "definition": "Élément qui augmente le résultat de la période selon les règles comptables, indépendamment de sa date d’encaissement.",
+      "context": "Les ventes, certains intérêts reçus et la production stockée sont des produits de nature différente.",
+      "example": "Une prestation de décembre facturée 20 k€ est un produit de décembre même si le client paie en janvier.",
+      "misconception": "Tous les produits ne sont pas des ventes ou des encaissements.",
+      "related": [
+        "vente",
+        "production-stockee",
+        "encaissement"
+      ]
+    },
+    {
+      "id": "charge",
+      "label": "Charge",
+      "acronym": "",
+      "aliases": [
+        "charges"
+      ],
+      "definition": "Consommation ou diminution d’avantages économiques rattachée à une période et qui diminue son résultat.",
+      "context": "Les marchandises vendues, les loyers, les salaires, les amortissements et les intérêts sont des charges.",
+      "example": "Un loyer de décembre de 3 k€ est une charge de décembre même payé en janvier.",
+      "misconception": "Une charge n’est pas systématiquement un décaissement de la période ; acheter une machine ne crée pas immédiatement une charge égale à son prix.",
+      "related": [
+        "decaissement",
+        "amortissement",
+        "immobilisation"
+      ]
+    },
+    {
+      "id": "vente",
+      "label": "Vente",
+      "acronym": "",
+      "aliases": [
+        "ventes"
+      ],
+      "definition": "Opération par laquelle l’entreprise fournit un bien ou un service à un client en échange d’une rémunération.",
+      "context": "Elle peut concerner une marchandise revendue, un bien fabriqué, un abonnement ou une prestation. Les cessions d’immobilisations sont traitées séparément du chiffre d’affaires usuel.",
+      "example": "Un commerce revend des chaussures ; un atelier vend un meuble fabriqué ; un cabinet vend une mission.",
+      "misconception": "Vendre ne signifie pas que le paiement a déjà été reçu.",
+      "related": [
+        "chiffre-affaires",
+        "marchandise",
+        "creance-client"
+      ]
+    },
+    {
+      "id": "chiffre-affaires",
+      "label": "Chiffre d’affaires",
+      "acronym": "CA",
+      "aliases": [
+        "chiffre d'affaires",
+        "Revenue",
+        "Revenue"
+      ],
+      "definition": "Montant hors taxes des ventes de biens et de services relevant de l’activité courante sur une période.",
+      "context": "Il comprend les ventes de marchandises et la production vendue ; il sert de dénominateur aux marges rapportées aux ventes.",
+      "example": "300 k€ de marchandises et 700 k€ de prestations donnent un CA de 1 000 k€.",
+      "misconception": "Le CA n’est ni le bénéfice, ni le total des produits, ni le total des encaissements.",
+      "related": [
+        "vente",
+        "production-vendue",
+        "resultat-net"
+      ]
+    },
+    {
+      "id": "marchandise",
+      "label": "Marchandise",
+      "acronym": "",
+      "aliases": [
+        "marchandises"
+      ],
+      "definition": "Bien acheté pour être revendu sans transformation substantielle.",
+      "context": "La marge commerciale mesure le solde dégagé par cette activité d’achat-revente.",
+      "example": "Des écouteurs achetés à un fournisseur puis revendus sont des marchandises ; une table fabriquée par l’entreprise est un produit fini.",
+      "misconception": "Un produit fabriqué n’est pas assimilé à une marchandise dans les SIG.",
+      "related": [
+        "marge-commerciale",
+        "production-vendue",
+        "stock"
+      ]
+    },
+    {
+      "id": "stock",
+      "label": "Stock",
+      "acronym": "",
+      "aliases": [
+        "stocks"
+      ],
+      "definition": "Biens détenus pour être vendus, en cours de production ou destinés à être consommés dans la production.",
+      "context": "C’est un montant au bilan à une date. Distinguer marchandises, matières premières et production fabriquée.",
+      "example": "Un stock de 50 k€ au 31 décembre n’est pas encore intégralement vendu ou consommé.",
+      "misconception": "Le stock n’est pas une réserve d’argent disponible ; sa vente peut encore coûter et son prix futur est incertain.",
+      "related": [
+        "bilan",
+        "stock-initial",
+        "stock-final"
+      ]
+    },
+    {
+      "id": "stock-initial",
+      "label": "Stock initial",
+      "acronym": "",
+      "aliases": [],
+      "definition": "Valeur du stock présent au début de la période considérée.",
+      "context": "Pour les marchandises vendues, il est ajouté aux achats car des biens déjà détenus peuvent être vendus pendant l’exercice.",
+      "example": "Stock initial 30 + achats 100 : 130 k€ de marchandises disponibles avant déduction du stock final.",
+      "misconception": "Le stock initial de marchandises ne doit pas être remplacé par la totalité des stocks d’une entreprise mixte.",
+      "related": [
+        "stock",
+        "stock-final",
+        "cout-marchandises"
+      ]
+    },
+    {
+      "id": "stock-final",
+      "label": "Stock final",
+      "acronym": "",
+      "aliases": [],
+      "definition": "Valeur du stock encore détenu à la fin de la période.",
+      "context": "Pour déterminer le coût des marchandises vendues, il est retiré des marchandises disponibles car ces biens ne sont pas encore vendus.",
+      "example": "Stock initial 30 + achats 100 − stock final 40 = coût vendu 90 k€.",
+      "misconception": "Une hausse du stock final réduit le coût vendu à achats donnés ; elle ne crée pas à elle seule de trésorerie.",
+      "related": [
+        "stock-initial",
+        "cout-marchandises",
+        "variation-stock"
+      ]
+    },
+    {
+      "id": "variation-stock",
+      "label": "Variation de stock",
+      "acronym": "",
+      "aliases": [],
+      "definition": "Différence entre deux valeurs de stock, dont le signe doit être défini avant tout calcul.",
+      "context": "Au bilan, variation = stock final − stock initial. Dans un calcul de consommation, la variation à ajouter aux achats est stock initial − stock final.",
+      "example": "Le stock passe de 30 à 40 : il augmente de 10 ; la consommation est égale aux achats moins 10.",
+      "misconception": "Employer le mot « variation » sans préciser la convention peut inverser le signe du coût ou du flux de trésorerie.",
+      "related": [
+        "stock-initial",
+        "stock-final",
+        "cout-marchandises"
+      ]
+    },
+    {
+      "id": "cout-marchandises",
+      "label": "Coût des marchandises vendues",
+      "acronym": "",
+      "aliases": [
+        "coût vendu",
+        "coût d’achat des marchandises vendues"
+      ],
+      "definition": "Coût d’acquisition rattaché aux marchandises effectivement vendues pendant la période.",
+      "context": "Dans les cas simplifiés : stock initial + achats de marchandises − stock final. Les frais d’acquisition sont supposés déjà compris dans les valeurs fournies.",
+      "example": "20 + 100 − 30 = 90 k€ : le coût des biens encore en stock est exclu de la charge des biens vendus.",
+      "misconception": "Il ne comprend pas ici les salaires commerciaux, les loyers ou les intérêts ; les achats ne sont égaux au coût vendu que si le stock ne varie pas.",
+      "related": [
+        "marge-commerciale",
+        "stock-initial",
+        "stock-final"
+      ]
+    },
+    {
+      "id": "marge-commerciale",
+      "label": "Marge commerciale",
+      "acronym": "",
+      "aliases": [],
+      "definition": "Différence entre les ventes de marchandises et le coût d’achat des marchandises effectivement vendues.",
+      "context": "Elle isole l’apport de l’achat-revente avant les autres consommations, les salaires, les taxes, les amortissements et la finance.",
+      "example": "Ventes 150 − coût vendu 100 = marge commerciale 50 k€. Si les autres charges dépassent 50, l’entreprise peut rester déficitaire.",
+      "misconception": "Ce n’est pas une marge nette. Le terme « marge brute » peut désigner un autre périmètre : toujours définir la formule.",
+      "related": [
+        "marchandise",
+        "cout-marchandises",
+        "resultat-net"
+      ]
+    },
+    {
+      "id": "production-vendue",
+      "label": "Production vendue",
+      "acronym": "",
+      "aliases": [],
+      "definition": "Ventes de biens fabriqués et de services produits par l’entreprise.",
+      "context": "Elle est une composante du CA, distincte des ventes de marchandises.",
+      "example": "Une entreprise facture 80 k€ de conseil et vend 120 k€ de meubles fabriqués : production vendue de 200 k€.",
+      "misconception": "Il ne faut pas ajouter une deuxième fois la production vendue à un CA qui la contient déjà.",
+      "related": [
+        "production-exercice",
+        "chiffre-affaires",
+        "production-stockee"
+      ]
+    },
+    {
+      "id": "production-stockee",
+      "label": "Production stockée",
+      "acronym": "",
+      "aliases": [],
+      "definition": "Variation de valeur des stocks de produits fabriqués et de travaux en cours sur la période.",
+      "context": "Positive, elle traduit une augmentation de la production non encore vendue ; négative, un déstockage. Elle est distincte d’une variation de stock de marchandises.",
+      "example": "Des produits finis passent de 20 à 35 k€ : production stockée de +15 k€.",
+      "misconception": "Elle contribue au résultat comptable sans être une vente ou un encaissement.",
+      "related": [
+        "production-exercice",
+        "stock",
+        "produit"
+      ]
+    },
+    {
+      "id": "production-immobilisee",
+      "label": "Production immobilisée",
+      "acronym": "",
+      "aliases": [],
+      "definition": "Production réalisée par l’entreprise pour elle-même et inscrite à l’actif comme immobilisation.",
+      "context": "Elle entre dans la production de l’exercice lorsque les critères comptables sont remplis ; elle est nulle dans les exercices simplifiés proposés.",
+      "example": "Une entreprise construit pour elle-même un équipement durable ; son coût éligible est immobilisé.",
+      "misconception": "Elle ne correspond pas à une vente à un client extérieur ni à une entrée d’argent.",
+      "related": [
+        "production-exercice",
+        "immobilisation",
+        "produit"
+      ]
+    },
+    {
+      "id": "production-exercice",
+      "label": "Production de l’exercice",
+      "acronym": "",
+      "aliases": [],
+      "definition": "Somme de la production vendue, de la production stockée et de la production immobilisée.",
+      "context": "Ce solde mesure la production comptabilisée pendant la période, hors achat-revente de marchandises.",
+      "example": "Production vendue 500 + stockée 20 + immobilisée 0 = 520 k€.",
+      "misconception": "Elle peut dépasser les ventes sans hausse immédiate de trésorerie.",
+      "related": [
+        "production-vendue",
+        "production-stockee",
+        "production-immobilisee"
+      ]
+    },
+    {
+      "id": "consommations-externes",
+      "label": "Consommations externes",
+      "acronym": "",
+      "aliases": [
+        "consommation externe"
+      ],
+      "definition": "Biens et services acquis auprès de tiers et consommés dans la période, dans le périmètre du calcul de valeur ajoutée.",
+      "context": "On retient les matières consommées et les autres achats et charges externes ; le coût marchandises est déjà traité dans la marge commerciale.",
+      "example": "Matières 80, loyers 20 et prestations externes 15 réduisent la richesse créée en interne.",
+      "misconception": "Les salaires des salariés de l’entreprise ne sont pas des consommations externes dans les SIG comptables simplifiés.",
+      "related": [
+        "valeur-ajoutee",
+        "charges-externes",
+        "personnel"
+      ]
+    },
+    {
+      "id": "matieres-consommees",
+      "label": "Matières consommées",
+      "acronym": "",
+      "aliases": [],
+      "definition": "Coût des matières premières et fournitures utilisées dans la production durant l’exercice.",
+      "context": "Si le coût consommé est déjà fourni, ne pas lui appliquer à nouveau une variation de stocks.",
+      "example": "Une usine consomme du bois pour fabriquer les meubles vendus ou stockés.",
+      "misconception": "Achats de matières et matières consommées diffèrent lorsque le stock de matières varie.",
+      "related": [
+        "consommations-externes",
+        "variation-stock",
+        "valeur-ajoutee"
+      ]
+    },
+    {
+      "id": "charges-externes",
+      "label": "Autres achats et charges externes",
+      "acronym": "",
+      "aliases": [
+        "autres charges externes",
+        "charge externe",
+        "autres charges externes"
+      ],
+      "definition": "Services et autres consommations achetés à des tiers et rattachés à la période.",
+      "context": "Exemples : loyers, énergie, assurance, publicité, honoraires, sous-traitance. Ils sont déduits pour calculer la VA dans les cas proposés.",
+      "example": "Un loyer de boutique de 30 k€ réduit la VA de 30 k€.",
+      "misconception": "Ne pas retirer à nouveau ces charges après avoir repris une VA qui les déduit déjà.",
+      "related": [
+        "consommations-externes",
+        "valeur-ajoutee",
+        "charge"
+      ]
+    },
+    {
+      "id": "valeur-ajoutee",
+      "label": "Valeur ajoutée",
+      "acronym": "VA",
+      "aliases": [],
+      "definition": "Solde qui mesure la richesse créée par l’activité après les consommations provenant de tiers.",
+      "context": "VA = marge commerciale + production de l’exercice − consommations externes. Elle sert notamment à rémunérer le personnel, les administrations et les financeurs.",
+      "example": "Marge commerciale 100 + production 200 − consommations externes 120 = VA 180 k€.",
+      "misconception": "Ce n’est pas le bénéfice des actionnaires : les salaires et de nombreuses autres charges restent à couvrir.",
+      "related": [
+        "marge-commerciale",
+        "production-exercice",
+        "ebe"
+      ]
+    },
+    {
+      "id": "personnel",
+      "label": "Charges de personnel",
+      "acronym": "",
+      "aliases": [
+        "personnel",
+        "salaires et cotisations sociales"
+      ],
+      "definition": "Rémunérations et cotisations sociales supportées par l’entreprise au titre de ses salariés.",
+      "context": "Elles sont déduites de la VA pour calculer l’EBE. Le coût employeur dépasse généralement le seul salaire net versé.",
+      "example": "Salaire brut 30 + cotisations patronales 12 : coût employeur 42 k€ dans cet exemple.",
+      "misconception": "Une hausse du total ne prouve pas un sureffectif : vérifier effectifs, rémunérations, activité, mix des compétences et qualité.",
+      "related": [
+        "ebe",
+        "valeur-ajoutee",
+        "poids-charges"
+      ]
+    },
+    {
+      "id": "impots-exploitation",
+      "label": "Impôts et taxes d’exploitation",
+      "acronym": "",
+      "aliases": [
+        "impôts et taxes"
+      ],
+      "definition": "Taxes liées à l’activité, distinctes de l’impôt calculé sur les bénéfices.",
+      "context": "Elles sont déduites pour calculer l’EBE dans les SIG simplifiés.",
+      "example": "Une taxe locale ou une taxe assise sur les salaires peut relever de ce poste selon le cadre applicable.",
+      "misconception": "L’impôt sur les bénéfices n’est pas déduit à cette étape.",
+      "related": [
+        "ebe",
+        "impot-benefices",
+        "charge"
+      ]
+    },
+    {
+      "id": "subvention-exploitation",
+      "label": "Subvention d’exploitation",
+      "acronym": "",
+      "aliases": [],
+      "definition": "Aide comptabilisée en produit pour soutenir l’activité ou compenser certaines charges d’exploitation.",
+      "context": "Elle est ajoutée à la VA pour calculer l’EBE dans la présentation retenue. Elle est nulle dans les cas proposés.",
+      "example": "VA 100 + subvention 5 − personnel 70 − taxes 5 = EBE 30 k€.",
+      "misconception": "Une subvention comptabilisée n’est pas nécessairement encaissée le même jour.",
+      "related": [
+        "ebe",
+        "produit",
+        "encaissement"
+      ]
+    },
+    {
+      "id": "ebe",
+      "label": "Excédent brut d’exploitation",
+      "acronym": "EBE",
+      "aliases": [
+        "excédent brut d'exploitation"
+      ],
+      "definition": "Solde de l’exploitation avant amortissements, financement et impôt sur les bénéfices.",
+      "context": "EBE = VA + subventions d’exploitation − impôts et taxes d’exploitation − charges de personnel. Négatif, il constitue une insuffisance brute d’exploitation.",
+      "example": "VA 200 − personnel 140 − taxes 10 = EBE 50 k€ ; amortissements et intérêts restent à couvrir.",
+      "misconception": "L’EBE n’est ni le résultat net ni le flux de trésorerie d’exploitation : les décalages de paiement et les stocks comptent.",
+      "related": [
+        "valeur-ajoutee",
+        "amortissement",
+        "flux-exploitation"
+      ]
+    },
+    {
+      "id": "amortissement",
+      "label": "Amortissement",
+      "acronym": "",
+      "aliases": [
+        "dotations aux amortissements",
+        "dotation aux amortissements",
+        "amortissements"
+      ],
+      "definition": "Répartition comptable du montant amortissable d’une immobilisation sur sa durée d’utilisation, selon sa consommation attendue.",
+      "context": "La dotation annuelle diminue le résultat d’exploitation sans entraîner en elle-même un paiement de l’année.",
+      "example": "Un équipement de 100 k€ amorti linéairement sur cinq ans sans valeur résiduelle donne 20 k€ de dotation annuelle.",
+      "misconception": "La dotation n’est pas une somme mise en réserve sur un compte bancaire ; le prix d’achat et la charge annuelle sont distincts.",
+      "related": [
+        "immobilisation",
+        "resultat-exploitation",
+        "capex"
+      ]
+    },
+    {
+      "id": "immobilisation",
+      "label": "Immobilisation",
+      "acronym": "",
+      "aliases": [
+        "immobilisations",
+        "immobilisations nettes",
+        "Property and equipment",
+        "Property and equipment"
+      ],
+      "definition": "Actif destiné à être utilisé durablement par l’entreprise plutôt qu’à être vendu dans le cycle courant.",
+      "context": "Au bilan, sa valeur nette tient compte notamment des amortissements cumulés. Les acquisitions payées sont des flux d’investissement.",
+      "example": "Une machine de production est une immobilisation ; les produits fabriqués pour les clients sont des stocks.",
+      "misconception": "L’achat de la machine ne devient pas immédiatement une charge égale à son prix.",
+      "related": [
+        "actif",
+        "amortissement",
+        "capex"
+      ]
+    },
+    {
+      "id": "resultat-exploitation",
+      "label": "Résultat d’exploitation",
+      "acronym": "RE",
+      "aliases": [
+        "résultat d'exploitation",
+        "Income from operations",
+        "Operating income",
+        "Income from operations",
+        "Operating income"
+      ],
+      "definition": "Solde des produits et charges liés à l’activité d’exploitation, après les charges calculées comme les amortissements.",
+      "context": "Dans ces cas sans autres postes : RE = EBE − dotations aux amortissements.",
+      "example": "EBE 60 − amortissements 25 = RE 35 k€.",
+      "misconception": "Un RE positif ne garantit pas un résultat net positif : les intérêts et l’impôt restent à prendre en compte.",
+      "related": [
+        "ebe",
+        "resultat-financier",
+        "rcai"
+      ]
+    },
+    {
+      "id": "resultat-financier",
+      "label": "Résultat financier",
+      "acronym": "RF",
+      "aliases": [],
+      "definition": "Différence entre les produits financiers et les charges financières comptabilisés sur la période.",
+      "context": "Il traduit notamment le coût des intérêts et les revenus de certains placements, sans intégrer le remboursement du capital des emprunts.",
+      "example": "Produits financiers 2 − intérêts 9 = résultat financier −7 k€.",
+      "misconception": "Un nouvel emprunt encaissé n’est pas un produit financier ; son remboursement en capital n’est pas une charge.",
+      "related": [
+        "interet",
+        "emprunt",
+        "rcai"
+      ]
+    },
+    {
+      "id": "interet",
+      "label": "Intérêt",
+      "acronym": "",
+      "aliases": [
+        "intérêts",
+        "charges financières"
+      ],
+      "definition": "Rémunération due au prêteur pour la mise à disposition d’un financement pendant une durée.",
+      "context": "Les intérêts diminuent le résultat financier ; ils sont distincts du remboursement du principal.",
+      "example": "Une échéance de 12 k€ comprend 10 de capital et 2 d’intérêts : la charge financière est 2, pas 12.",
+      "misconception": "Le capital remboursé n’est pas une charge d’intérêt.",
+      "related": [
+        "emprunt",
+        "resultat-financier",
+        "couverture-interets"
+      ]
+    },
+    {
+      "id": "rcai",
+      "label": "Résultat courant avant impôts",
+      "acronym": "RCAI",
+      "aliases": [
+        "résultat courant avant impôt"
+      ],
+      "definition": "Solde obtenu en additionnant le résultat d’exploitation et le résultat financier dans les cas proposés.",
+      "context": "Il permet de lire la performance courante après le financement mais avant l’impôt sur les bénéfices et les éventuels éléments non courants.",
+      "example": "RE 35 + RF −7 = RCAI 28 k€.",
+      "misconception": "Ce n’est pas le résultat net si un impôt ou d’autres éléments doivent encore être pris en compte.",
+      "related": [
+        "resultat-exploitation",
+        "resultat-financier",
+        "resultat-net"
+      ]
+    },
+    {
+      "id": "resultat-net",
+      "label": "Résultat net",
+      "acronym": "RN",
+      "aliases": [
+        "Net income",
+        "Net income"
+      ],
+      "definition": "Solde final des produits et charges de la période : positif, un bénéfice ; négatif, une perte.",
+      "context": "Dans les cas sans exceptionnel ni participation : RN = RCAI − impôt sur les bénéfices.",
+      "example": "RCAI 28 − impôt 7 = bénéfice 21 k€ ; RCAI −10 et impôt nul = perte 10 k€.",
+      "misconception": "Un bénéfice n’est pas un solde bancaire : crédit clients, stocks, investissement et financement peuvent modifier le cash.",
+      "related": [
+        "compte-resultat",
+        "rcai",
+        "tresorerie"
+      ]
+    },
+    {
+      "id": "impot-benefices",
+      "label": "Impôt sur les bénéfices",
+      "acronym": "",
+      "aliases": [
+        "impôt sur les bénéfices",
+        "impôt sur les sociétés",
+        "IS"
+      ],
+      "definition": "Charge fiscale relative aux bénéfices imposables selon les règles applicables.",
+      "context": "Dans les exercices, son montant est fourni : le déduire après le RCAI dans le périmètre simplifié.",
+      "example": "RCAI 100 et impôt fourni 24 donnent un RN de 76 k€.",
+      "misconception": "Ne pas appliquer un taux supposé au résultat comptable : résultat fiscal et comptable peuvent différer.",
+      "related": [
+        "rcai",
+        "resultat-net",
+        "impots-exploitation"
+      ]
+    },
+    {
+      "id": "sig",
+      "label": "Soldes intermédiaires de gestion",
+      "acronym": "SIG",
+      "aliases": [],
+      "definition": "Étapes de calcul qui expliquent comment se forme le résultat en séparant les mécanismes de l’activité, de la consommation et du financement.",
+      "context": "Ils comprennent notamment marge commerciale, production, VA, EBE, RE et RCAI dans le cadre français utilisé ici.",
+      "example": "Un CA en hausse peut coexister avec un EBE en baisse si les consommations et salaires progressent plus vite.",
+      "misconception": "Ces soldes ne sont pas des soldes bancaires et leur présentation ne doit pas être plaquée directement sur des comptes étrangers sans adaptation.",
+      "related": [
+        "marge-commerciale",
+        "ebe",
+        "rcai"
+      ]
+    },
+    {
+      "id": "retraitement",
+      "label": "Retraitement",
+      "acronym": "",
+      "aliases": [
+        "retraitements"
+      ],
+      "definition": "Modification analytique de la présentation de certains postes pour mieux comparer ou comprendre la réalité économique, en explicitant les règles retenues.",
+      "context": "Un retraitement peut reclasser une charge entre consommations externes et personnel. Aucun calcul de retraitement des SIG n’est demandé dans cette application.",
+      "example": "Une analyse peut identifier séparément certains coûts de personnel extérieur pour étudier l’ensemble des ressources humaines.",
+      "misconception": "Ce n’est pas une correction libre des chiffres ni une permission de choisir une formule sans justification.",
+      "related": [
+        "sig",
+        "charges-externes",
+        "personnel"
+      ]
+    },
+    {
+      "id": "creance-client",
+      "label": "Créance client",
+      "acronym": "",
+      "aliases": [
+        "créances clients",
+        "créance",
+        "créances",
+        "Accounts receivable",
+        "Accounts receivable"
+      ],
+      "definition": "Droit de l’entreprise à recevoir un paiement d’un client après une vente non encore réglée.",
+      "context": "Elle figure à l’actif du bilan. Sa hausse peut contribuer à expliquer pourquoi une hausse des ventes n’apporte pas immédiatement autant de cash.",
+      "example": "Une facture de 10 k€ non réglée à la clôture augmente les créances de 10 k€.",
+      "misconception": "Une créance n’est pas encore de l’argent disponible et son recouvrement n’est pas garanti.",
+      "related": [
+        "actif",
+        "encaissement",
+        "bfr"
+      ]
+    },
+    {
+      "id": "dette",
+      "label": "Dette",
+      "acronym": "",
+      "aliases": [
+        "dettes"
+      ],
+      "definition": "Obligation de payer un tiers, selon des conditions déterminées.",
+      "context": "Au bilan, distinguer dettes fournisseurs, dettes fiscales et sociales et emprunts : leurs causes et échéances diffèrent.",
+      "example": "Une facture fournisseur non payée est une dette, même si elle ne porte pas d’intérêt.",
+      "misconception": "Toutes les dettes ne sont pas des emprunts et une dette ne décrit pas à elle seule une charge de la période.",
+      "related": [
+        "dette-fournisseur",
+        "emprunt",
+        "passif"
+      ]
+    },
+    {
+      "id": "dette-fournisseur",
+      "label": "Dette fournisseur",
+      "acronym": "",
+      "aliases": [
+        "dettes fournisseurs"
+      ],
+      "definition": "Montant dû à un fournisseur pour un achat ou une prestation reçu et non encore payé.",
+      "context": "Sa hausse, toutes choses égales par ailleurs, retarde un décaissement et soutient temporairement la trésorerie d’exploitation.",
+      "example": "Un achat consommé de 20 k€ payé le mois suivant peut diminuer le résultat avant de diminuer la trésorerie.",
+      "misconception": "Retarder un paiement ne supprime pas la charge et peut créer un risque pour la relation fournisseur.",
+      "related": [
+        "dette",
+        "decaissement",
+        "bfr"
+      ]
+    },
+    {
+      "id": "emprunt",
+      "label": "Emprunt",
+      "acronym": "",
+      "aliases": [
+        "emprunts",
+        "emprunts bancaires",
+        "capital des emprunts"
+      ],
+      "definition": "Financement reçu d’un prêteur, qui crée une dette et doit être remboursé selon le contrat.",
+      "context": "L’encaissement et le remboursement du capital sont des flux de financement. Les intérêts sont traités séparément en charge financière.",
+      "example": "Recevoir 100 k€ augmente banque et dette de 100 ; cela n’ajoute pas 100 au bénéfice.",
+      "misconception": "Un prêt ne constitue pas un chiffre d’affaires ; rembourser son capital ne diminue pas le résultat.",
+      "related": [
+        "dette",
+        "interet",
+        "flux-financement"
+      ]
+    },
+    {
+      "id": "capitaux-propres",
+      "label": "Capitaux propres",
+      "acronym": "",
+      "aliases": [
+        "Stockholders’ equity",
+        "Stockholders’ equity"
+      ],
+      "definition": "Intérêt résiduel dans les actifs après déduction des dettes ; ils comprennent notamment les apports, les réserves et le résultat conservé.",
+      "context": "Le RN augmente les capitaux propres s’il est positif ; les pertes et les dividendes les réduisent, à périmètre constant.",
+      "example": "Capitaux propres d’ouverture 300 + bénéfice 40 − dividendes 10 = clôture 330 k€ hors autres mouvements.",
+      "misconception": "Ce n’est ni une dette bancaire, ni une réserve de cash, ni automatiquement la valeur de marché des actions.",
+      "related": [
+        "passif",
+        "resultat-net",
+        "dividende"
+      ]
+    },
+    {
+      "id": "tresorerie",
+      "label": "Trésorerie",
+      "acronym": "",
+      "aliases": [
+        "cash",
+        "disponibilités",
+        "argent disponible",
+        "Cash and cash equivalents",
+        "Cash and cash equivalents"
+      ],
+      "definition": "Ressources monétaires disponibles immédiatement, selon le périmètre retenu.",
+      "context": "Dans ces cas sans découvert ni placement assimilé, la trésorerie correspond aux disponibilités au bilan.",
+      "example": "La banque passe de 100 à 80 k€ : la variation de trésorerie est −20 k€.",
+      "misconception": "Un résultat positif ou un actif élevé ne garantit pas une trésorerie suffisante pour payer les échéances.",
+      "related": [
+        "solde-bancaire",
+        "tableau-flux",
+        "encaissement"
+      ]
+    },
+    {
+      "id": "solde-bancaire",
+      "label": "Solde bancaire",
+      "acronym": "",
+      "aliases": [
+        "soldes bancaires"
+      ],
+      "definition": "Montant figurant sur un compte bancaire à un instant, après les opérations enregistrées.",
+      "context": "Il renseigne sur un compte particulier ; la trésorerie de l’entreprise peut comprendre plusieurs comptes et d’autres éléments selon sa définition.",
+      "example": "Compte A : +20 k€ et compte B : +5 k€ ; il faut considérer les deux pour mesurer les fonds en banque.",
+      "misconception": "L’EBE, la marge et le résultat net ne sont pas des soldes bancaires.",
+      "related": [
+        "tresorerie",
+        "ebe",
+        "resultat-net"
+      ]
+    },
+    {
+      "id": "encaissement",
+      "label": "Encaissement",
+      "acronym": "",
+      "aliases": [
+        "encaissements"
+      ],
+      "definition": "Entrée effective d’argent dans la trésorerie de l’entreprise.",
+      "context": "Il peut venir d’un client, d’un emprunt, d’un apport ou d’une cession : sa nature doit être identifiée.",
+      "example": "Le paiement en janvier d’une vente de décembre crée un encaissement de janvier sans nouvelle vente en janvier.",
+      "misconception": "Un encaissement n’est pas toujours un produit ou un bénéfice.",
+      "related": [
+        "decaissement",
+        "creance-client",
+        "emprunt"
+      ]
+    },
+    {
+      "id": "decaissement",
+      "label": "Décaissement",
+      "acronym": "",
+      "aliases": [
+        "décaissements"
+      ],
+      "definition": "Sortie effective d’argent de la trésorerie de l’entreprise.",
+      "context": "Elle peut régler une charge, financer une immobilisation, rembourser une dette ou verser un dividende.",
+      "example": "Payer une machine 80 k€ est un décaissement d’investissement, même si l’amortissement annuel est de 16 k€.",
+      "misconception": "Tout décaissement n’est pas une charge de l’exercice.",
+      "related": [
+        "encaissement",
+        "capex",
+        "amortissement"
+      ]
+    },
+    {
+      "id": "bfr",
+      "label": "Besoin en fonds de roulement",
+      "acronym": "BFR",
+      "aliases": [],
+      "definition": "Montant de ressources immobilisées dans le cycle d’exploitation après les financements spontanés fournis par les dettes liées à ce cycle.",
+      "context": "Dans ces cas : stocks + créances clients − dettes fournisseurs − dettes fiscales et sociales. Sa variation intervient dans le passage du résultat au flux d’exploitation.",
+      "example": "Une hausse de 20 k€ des créances sans autre changement augmente le BFR de 20 et absorbe 20 de cash.",
+      "misconception": "Une hausse du BFR n’est pas une nouvelle charge : c’est un besoin de financement du cycle.",
+      "related": [
+        "stock",
+        "creance-client",
+        "flux-exploitation"
+      ]
+    },
+    {
+      "id": "flux-exploitation",
+      "label": "Flux de trésorerie d’exploitation",
+      "acronym": "CFO",
+      "aliases": [
+        "flux d’exploitation",
+        "flux opérationnel",
+        "CFO",
+        "Net cash provided by operating activities",
+        "Net cash provided by operating activities"
+      ],
+      "definition": "CFO signifie Cash Flow from Operations. Encaissements moins décaissements liés à l’activité d’exploitation, selon le classement choisi.",
+      "context": "Dans les cas simplifiés : RN + amortissements − variation du BFR. Intérêts et impôt sont ici classés en exploitation.",
+      "example": "RN 30 + amortissements 20 − hausse du BFR 40 = flux d’exploitation 10 k€.",
+      "misconception": "Il peut être négatif avec un bénéfice positif ; l’EBE n’est pas ce flux.",
+      "related": [
+        "tableau-flux",
+        "bfr",
+        "resultat-net"
+      ]
+    },
+    {
+      "id": "flux-investissement",
+      "label": "Flux de trésorerie d’investissement",
+      "acronym": "CFI",
+      "aliases": [
+        "flux d’investissement",
+        "CFI"
+      ],
+      "definition": "CFI signifie Cash Flow from Investing. Entrées et sorties d’argent relatives notamment aux acquisitions et cessions d’actifs durables.",
+      "context": "Dans les cas sans cession : flux d’investissement = − acquisitions d’immobilisations payées.",
+      "example": "Une machine payée 100 k€ crée un flux d’investissement de −100 k€.",
+      "misconception": "Un flux d’investissement négatif ne prouve pas une mauvaise performance : il peut financer des capacités futures.",
+      "related": [
+        "capex",
+        "immobilisation",
+        "tableau-flux"
+      ]
+    },
+    {
+      "id": "flux-financement",
+      "label": "Flux de trésorerie de financement",
+      "acronym": "CFF",
+      "aliases": [
+        "flux de financement",
+        "CFF"
+      ],
+      "definition": "CFF signifie Cash Flow from Financing. Entrées et sorties d’argent liées aux apports de capitaux, aux emprunts, à leur remboursement et aux distributions, selon le classement retenu.",
+      "context": "Dans ces cas : nouveaux emprunts − remboursements en capital − dividendes, sans autres mouvements.",
+      "example": "Emprunts reçus 80 − capital remboursé 30 − dividendes 10 = +40 k€.",
+      "misconception": "Ce flux peut augmenter le cash sans améliorer la rentabilité de l’activité.",
+      "related": [
+        "emprunt",
+        "dividende",
+        "tableau-flux"
+      ]
+    },
+    {
+      "id": "capex",
+      "label": "Dépenses d’investissement",
+      "acronym": "CAPEX",
+      "aliases": [
+        "capex"
+      ],
+      "definition": "CAPEX signifie Capital Expenditures : dépenses consacrées à l’acquisition ou au développement d’actifs durables ; le périmètre exact doit être précisé.",
+      "context": "Dans les cas proposés, il s’agit des acquisitions d’immobilisations payées pendant l’exercice.",
+      "example": "Un nouveau matériel informatique payé 50 k€ pèse sur le cash d’investissement, puis sur le résultat via son amortissement.",
+      "misconception": "CAPEX et dotation aux amortissements ne sont pas deux noms pour le même montant.",
+      "related": [
+        "immobilisation",
+        "flux-investissement",
+        "amortissement"
+      ]
+    },
+    {
+      "id": "dividende",
+      "label": "Dividende",
+      "acronym": "",
+      "aliases": [
+        "dividendes"
+      ],
+      "definition": "Distribution aux associés ou actionnaires décidée selon les règles applicables.",
+      "context": "Son paiement diminue la trésorerie et les capitaux propres, sans constituer une charge du résultat de l’exercice.",
+      "example": "Un bénéfice de 50 k€ et un dividende de 20 augmentent les capitaux propres de 30 hors autres mouvements.",
+      "misconception": "Le dividende ne se déduit pas pour calculer le résultat net.",
+      "related": [
+        "capitaux-propres",
+        "flux-financement",
+        "resultat-net"
+      ]
+    },
+    {
+      "id": "taux-variation",
+      "label": "Taux de variation",
+      "acronym": "",
+      "aliases": [],
+      "definition": "Variation relative d’une valeur entre une période de départ et une période d’arrivée.",
+      "context": "Formule : (valeur N − valeur N-1) / valeur N-1 × 100, avec une base non nulle et une interprétation adaptée à son signe.",
+      "example": "Ventes de 100 à 120 : +20 %. De 120 à 100 : −16,67 %.",
+      "misconception": "On ne divise pas par la valeur d’arrivée. Une base nulle interdit le calcul usuel ; une base négative exige de privilégier une lecture en montants et en signes.",
+      "related": [
+        "pourcentage",
+        "point-pourcentage",
+        "ratio"
+      ]
+    },
+    {
+      "id": "pourcentage",
+      "label": "Pourcentage",
+      "acronym": "",
+      "aliases": [
+        "pourcent"
+      ],
+      "definition": "Expression d’un rapport pour une base de 100.",
+      "context": "Dans l’application, saisir 12,5 pour 12,5 %, et non 0,125 sauf indication contraire.",
+      "example": "Personnel 200 / CA 1 000 × 100 = 20 %, soit 20 euros de personnel pour 100 euros de ventes.",
+      "misconception": "Le symbole % ne suffit pas : il faut identifier numérateur, dénominateur et période.",
+      "related": [
+        "ratio",
+        "poids-charges",
+        "point-pourcentage"
+      ]
+    },
+    {
+      "id": "point-pourcentage",
+      "label": "Point de pourcentage",
+      "acronym": "",
+      "aliases": [
+        "points de pourcentage"
+      ],
+      "definition": "Unité qui exprime la différence entre deux taux exprimés en pourcentage.",
+      "context": "Elle distingue l’écart des taux de leur variation relative.",
+      "example": "Une marge de 20 % à 25 % augmente de 5 points, soit une hausse relative de 25 %.",
+      "misconception": "Dire « +5 % » pour passer de 20 % à 25 % est ambigu et ne remplace pas « +5 points ».",
+      "related": [
+        "pourcentage",
+        "taux-variation",
+        "marge-sur-ventes"
+      ]
+    },
+    {
+      "id": "ratio",
+      "label": "Ratio",
+      "acronym": "",
+      "aliases": [
+        "ratios"
+      ],
+      "definition": "Rapport entre deux grandeurs choisies pour répondre à une question économique précise.",
+      "context": "Toujours préciser formule, période, unité et dénominateur. Comparer seulement des périmètres cohérents.",
+      "example": "RE / CA renseigne sur la part des ventes qui reste en résultat d’exploitation.",
+      "misconception": "Un ratio isolé n’établit ni la cause d’un problème ni un seuil universel de bonne santé.",
+      "related": [
+        "marge-exploitation",
+        "marge-nette",
+        "poids-charges"
+      ]
+    },
+    {
+      "id": "marge-sur-ventes",
+      "label": "Marge commerciale rapportée aux ventes",
+      "acronym": "",
+      "aliases": [
+        "taux de marque",
+        "marge sur ventes"
+      ],
+      "definition": "Rapport entre marge commerciale et ventes de marchandises, multiplié par 100.",
+      "context": "Il mesure la marge commerciale conservée pour 100 euros de ventes de marchandises. Dans cette application, cette formule est toujours explicitée.",
+      "example": "Marge 40 / ventes de marchandises 200 = 20 %.",
+      "misconception": "Ne pas confondre avec marge / coût d’achat vendu, souvent nommé taux de marge dans le commerce ; ne pas utiliser le CA total d’une activité mixte sans le dire.",
+      "related": [
+        "marge-commerciale",
+        "pourcentage",
+        "ratio"
+      ]
+    },
+    {
+      "id": "marge-exploitation",
+      "label": "Marge d’exploitation",
+      "acronym": "",
+      "aliases": [
+        "marge opérationnelle"
+      ],
+      "definition": "Rapport entre le résultat d’exploitation et le chiffre d’affaires, multiplié par 100 dans le périmètre retenu.",
+      "context": "Il mesure le résultat d’exploitation pour 100 euros de ventes, après amortissements, avant financement et impôt sur les bénéfices.",
+      "example": "RE 50 / CA 1 000 × 100 = 5 %.",
+      "misconception": "Une marge d’exploitation positive ne garantit pas une marge nette positive ni une trésorerie en hausse.",
+      "related": [
+        "resultat-exploitation",
+        "chiffre-affaires",
+        "marge-nette"
+      ]
+    },
+    {
+      "id": "marge-nette",
+      "label": "Marge nette",
+      "acronym": "",
+      "aliases": [],
+      "definition": "Rapport entre résultat net et chiffre d’affaires, multiplié par 100.",
+      "context": "Elle mesure le résultat final pour 100 euros de ventes, dans un périmètre comptable déterminé.",
+      "example": "RN −20 / CA 1 000 × 100 = −2 % : perte de 2 euros pour 100 euros de ventes.",
+      "misconception": "Elle n’est pas la marge commerciale et ne mesure pas directement le cash disponible.",
+      "related": [
+        "resultat-net",
+        "chiffre-affaires",
+        "ratio"
+      ]
+    },
+    {
+      "id": "poids-charges",
+      "label": "Poids d’une charge dans les ventes",
+      "acronym": "",
+      "aliases": [
+        "poids des charges",
+        "poids du personnel"
+      ],
+      "definition": "Rapport entre une charge identifiée et le chiffre d’affaires, multiplié par 100.",
+      "context": "Il aide à comparer le coût au niveau d’activité, en complément des montants et des données opérationnelles.",
+      "example": "Personnel 240 / CA 1 200 = 20 %. La part peut baisser même si la masse salariale augmente.",
+      "misconception": "Une baisse de ce poids ne prouve pas une amélioration sociale ou un sureffectif antérieur.",
+      "related": [
+        "personnel",
+        "charges-externes",
+        "pourcentage"
+      ]
+    },
+    {
+      "id": "couverture-interets",
+      "label": "Poids des intérêts dans l’EBE",
+      "acronym": "",
+      "aliases": [
+        "intérêts sur EBE"
+      ],
+      "definition": "Rapport intérêts / EBE × 100 lorsque l’EBE est strictement positif.",
+      "context": "Il indique quelle part de l’EBE représente la charge d’intérêts ; un rapport inverse EBE / intérêts serait un autre indicateur de couverture, en nombre de fois.",
+      "example": "Intérêts 10 / EBE 100 = 10 %. Si l’EBE est négatif, le quotient négatif ne traduit pas un financement confortable.",
+      "misconception": "Ne pas confondre intérêts / EBE et EBE / intérêts ; un dénominateur nul ou négatif appelle une alerte d’interprétation.",
+      "related": [
+        "interet",
+        "ebe",
+        "ratio"
+      ]
+    },
+    {
+      "id": "resultat",
+      "label": "Résultat",
+      "acronym": "",
+      "aliases": [
+        "résultats",
+        "bénéfice",
+        "bénéfices",
+        "perte",
+        "pertes"
+      ],
+      "definition": "Solde entre des produits et des charges sur un périmètre et une période définis. Positif, il s’agit d’un bénéfice ou excédent ; négatif, d’une perte ou insuffisance selon le solde.",
+      "context": "Le résultat peut être d’exploitation, financier, courant ou net : le mot seul ne précise pas l’étage. Toujours lire le qualificatif et la formule.",
+      "example": "Un résultat d’exploitation de +20 et un résultat financier de −30 donnent un résultat courant de −10, avant impôt dans ce cas.",
+      "misconception": "Tous les résultats ne sont pas le résultat net, et aucun résultat ne doit être assimilé automatiquement au solde bancaire.",
+      "related": [
+        "resultat-exploitation",
+        "resultat-financier",
+        "resultat-net"
+      ]
+    },
+    {
+      "id": "financement",
+      "label": "Financement",
+      "acronym": "",
+      "aliases": [
+        "financements",
+        "financier"
+      ],
+      "definition": "Moyens mobilisés pour financer les besoins de l’entreprise : capitaux apportés, bénéfices conservés, emprunts et financements du cycle d’exploitation.",
+      "context": "Une décision de financement change la structure des ressources. Son effet sur la trésorerie, la dette, les capitaux propres et les charges dépend de sa nature.",
+      "example": "Un emprunt encaissé apporte du cash et crée une dette ; ses intérêts futurs peuvent réduire le résultat.",
+      "misconception": "Le financement ne se confond pas avec le résultat financier : celui-ci porte sur les produits et charges financiers, pas sur tous les mouvements de dette ou de capital.",
+      "related": [
+        "emprunt",
+        "capitaux-propres",
+        "resultat-financier"
+      ]
+    },
+    {
+      "id": "exploitation",
+      "label": "Exploitation",
+      "acronym": "",
+      "aliases": [],
+      "definition": "Ensemble des opérations liées à l’activité courante par laquelle l’entreprise produit ou commercialise ses biens et services.",
+      "context": "Les ventes, consommations, salaires et amortissements de l’activité contribuent à son résultat d’exploitation. Les flux d’exploitation suivent les paiements liés à cette activité selon le classement retenu.",
+      "example": "Un magasin achète et vend des vêtements, paie ses équipes et loue son local dans le cadre de son exploitation.",
+      "misconception": "L’exploitation n’est pas synonyme de résultat d’exploitation : l’une est une activité, l’autre un solde comptable mesurant ses produits moins ses charges.",
+      "related": [
+        "resultat-exploitation",
+        "flux-exploitation",
+        "ebe"
+      ]
+    },
+    {
+      "id": "produits-financiers",
+      "label": "Produits financiers",
+      "acronym": "",
+      "aliases": [
+        "produit financier"
+      ],
+      "definition": "Revenus comptabilisés au titre de placements ou de certaines opérations financières, selon les règles du référentiel retenu.",
+      "context": "Ils sont ajoutés au résultat financier avant déduction des charges financières. Ils sont nuls dans les cas simplifiés de cette banque.",
+      "example": "Des intérêts acquis sur un placement de trésorerie peuvent constituer un produit financier.",
+      "misconception": "Recevoir le capital d’un emprunt n’est pas un produit financier : cela crée une dette, sans améliorer le résultat.",
+      "related": [
+        "produit",
+        "resultat-financier",
+        "emprunt"
+      ]
+    },
+    {
+      "acronym": "",
+      "id": "service",
+      "label": "Service",
+      "aliases": [
+        "services",
+        "prestation de services"
+      ],
+      "definition": "Activité fournie à un client : conseil, transport, abonnement, formation, réparation… Elle ne correspond pas à la revente en l’état d’une marchandise.",
+      "context": "Les ventes de services font partie du chiffre d’affaires, mais pas des ventes de marchandises utilisées pour la marge commerciale scolaire.",
+      "example": "Un salon facture une coupe ; un consultant facture une mission. Ils vendent des services.",
+      "misconception": "Toute vente n’est pas une vente de marchandises.",
+      "related": [
+        "vente",
+        "chiffre-affaires",
+        "marge-commerciale"
+      ]
+    },
+    {
+      "acronym": "",
+      "id": "gross-profit",
+      "label": "Gross profit",
+      "aliases": [
+        "gross margin"
+      ],
+      "definition": "Dans les comptes en anglais : revenus diminués des coûts classés dans le coût des ventes par l’entreprise. La traduction et le périmètre doivent être vérifiés.",
+      "context": "Un groupe de technologies peut inclure des coûts de fabrication, d’hébergement ou de services. Ce poste ne correspond pas automatiquement à la marge commerciale des SIG français.",
+      "example": "Ne renomme pas le Revenue moins Cost of revenue de Meta « marge commerciale » sans analyser les activités et les coûts.",
+      "misconception": "Les mots marge brute, gross profit et marge commerciale ne sont pas interchangeables sans définition.",
+      "related": [
+        "marge-commerciale",
+        "charge"
+      ]
+    },
+    {
+      "acronym": "United States Generally Accepted Accounting Principles",
+      "id": "us-gaap",
+      "label": "US GAAP",
+      "aliases": [],
+      "definition": "Principes comptables généralement admis aux États-Unis. Référentiel utilisé ici par Meta et AMD pour établir leurs comptes consolidés.",
+      "context": "Le classement des postes et certains calculs diffèrent du plan comptable français et des IFRS.",
+      "example": "Un compte de résultat américain classe souvent les charges par fonction : recherche, commercialisation, administration.",
+      "misconception": "On ne reconstruit pas automatiquement tous les SIG français avec un compte de résultat US GAAP.",
+      "related": [
+        "compte-resultat",
+        "sig"
+      ]
+    },
+    {
+      "acronym": "International Financial Reporting Standards",
+      "id": "ifrs",
+      "label": "IFRS",
+      "aliases": [],
+      "definition": "Normes internationales d’information financière. Elles encadrent notamment les comptes consolidés des groupes cotés de l’Union européenne.",
+      "context": "Carrefour publie ici ses comptes consolidés en IFRS. La comparaison 2024 présentée en 2025 tient compte du périmètre des activités poursuivies selon IFRS 5.",
+      "example": "Le compte de résultat distingue les activités poursuivies des activités abandonnées.",
+      "misconception": "Un indicateur propre à un groupe n’est pas nécessairement un solde défini de manière identique chez ses concurrents.",
+      "related": [
+        "compte-resultat",
+        "bilan"
+      ]
+    },
+    {
+      "acronym": "Earnings Before Interest, Taxes, Depreciation and Amortization",
+      "id": "ebitda",
+      "label": "EBITDA",
+      "aliases": [],
+      "definition": "Indicateur de résultat avant intérêts, impôts et amortissements. Son calcul opérationnel exact doit être vérifié dans la publication de l’entreprise.",
+      "context": "L’EBITDA publié par Carrefour ne doit pas être renommé EBE sans vérifier et rapprocher leurs définitions.",
+      "example": "Un indicateur élevé avant amortissements ne garantit ni un bénéfice net ni une hausse de trésorerie.",
+      "misconception": "EBITDA et EBE ne sont pas toujours identiques.",
+      "related": [
+        "ebe",
+        "resultat-exploitation",
+        "tresorerie"
+      ]
+    },
+    {
+      "acronym": "FCF · flux de trésorerie disponible",
+      "id": "free-cash-flow",
+      "label": "Free cash flow",
+      "aliases": [
+        "FCF",
+        "cash-flow libre"
+      ],
+      "definition": "Indicateur de trésorerie disponible après certaines dépenses d’investissement. La définition précise varie selon les groupes et doit être lue avec le calcul publié.",
+      "context": "Meta soustrait aux flux d’exploitation les achats d’immobilisations et le principal des finance leases. Il s’agit d’un indicateur non-GAAP.",
+      "example": "Meta 2025 : 115 800 − 69 691 − 2 524 = 43 585 M$.",
+      "misconception": "Le FCF n’est pas le bénéfice net, ni la variation totale de trésorerie.",
+      "related": [
+        "capex",
+        "flux-exploitation",
+        "resultat-net"
+      ]
+    },
+    {
+      "acronym": "",
+      "id": "finance-lease",
+      "label": "Finance lease",
+      "aliases": [
+        "finance leases"
+      ],
+      "definition": "Location-financement selon le référentiel appliqué : un contrat de location dont les paiements comprennent notamment une part de remboursement du principal.",
+      "context": "Dans la définition de CAPEX et de FCF de Meta, les remboursements du principal de ces contrats sont explicitement pris en compte.",
+      "example": "2 524 M$ de principal de finance leases sont ajoutés aux 69 691 M$ d’achats d’immobilisations dans le CAPEX publié de Meta 2025.",
+      "misconception": "Ce poste ne s’ajoute pas indistinctement à tous les indicateurs d’investissement.",
+      "related": [
+        "capex",
+        "free-cash-flow"
+      ]
+    },
+    {
+      "acronym": "",
+      "id": "activites-poursuivies",
+      "label": "Activités poursuivies",
+      "aliases": [
+        "activités abandonnées"
+      ],
+      "definition": "Les activités poursuivies sont celles qui demeurent dans le périmètre analysé. Les activités abandonnées sont présentées séparément selon les règles du référentiel.",
+      "context": "Pour comparer un résultat et un flux, garde le même périmètre : total avec abandonnées ou activités poursuivies seules.",
+      "example": "AMD 2025 : CFO total 7 709 M$, mais CFO des activités poursuivies 6 493 M$.",
+      "misconception": "Deux montants de la même année ne sont pas forcément comparables si leurs périmètres diffèrent.",
+      "related": [
+        "flux-exploitation",
+        "resultat-net"
+      ]
+    }
+  ]
+}
