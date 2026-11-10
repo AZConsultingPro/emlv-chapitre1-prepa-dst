@@ -1,19 +1,26 @@
-# Activation des validations Google Forms
+# Validations et suivi enseignant
 
-Le script `Code.gs` est préparé mais sa création des formulaires doit être exécutée dans le compte Google de l'enseignant et vérifiée avant diffusion.
+Activation effectuée le 10 novembre 2026 dans le projet existant EMLV · Prépa DST · Validations et suivi.
 
-1. Dans Google Apps Script, créer un projet « EMLV · Prépa DST · Validations » et remplacer le contenu de Code.gs par le fichier fourni.
-2. Exécuter `installerEMLV`. Les autorisations demandées correspondent à la création et gestion des Forms, du suivi Sheets et des déclencheurs de réception. Aucun email n'est envoyé, aucun fichier de réponses n'est rendu public.
-3. Le script crée huit formulaires publiés et un classeur privé. En cas d'interruption, relancer la même fonction dans le même projet pour reprendre sans doublons.
-4. Consulter les journaux : lien du suivi privé et configuration publique des huit formulaires. Intégrer seulement `forms` à la configuration de l'application. Ne pas publier l'URL privée du suivi.
-5. Pour chaque formulaire, vérifier la disponibilité en mode répondant, envoyer une réponse test (identifiant TEST), puis vérifier la ligne de réception dans Suivi. Vérifier un calcul avec virgule, un calcul avec point, un mauvais format et la mise en attente de l'argumentation. Tester aussi la modification d'une réponse.
-6. Conserver les copies de test pour contrôle, sans les mélanger avec une décision pédagogique concernant un étudiant.
+- Huit formulaires de compétence et un formulaire dédié au sujet blanc.
+- Neuf déclencheurs de réception vérifiés.
+- Neuf réponses TEST envoyées en mode répondant et retrouvées dans Suivi.
+- Champs de méthode obligatoires pour chaque calcul ; méthodes et argumentations à lire par l’enseignant.
+- Virgule, point, espace de milliers, unité et nombres négatifs testés.
+- Test réel d’une saisie illisible : format à revoir, exclusion du maximum objectif évalué, sans attribution automatique d’erreur.
+- Test réel d’une modification de réponse : mise à jour de la même ligne et statut Remise modifiée · à relire.
+- Classeur privé, aucune adresse email collectée automatiquement. Horodatage Europe/Paris.
+
+Les liens répondants sont dans assets/config.js. Le classeur privé et les liens de modification sont transmis uniquement à l’enseignant et ne doivent pas être ajoutés à ce dépôt public.
+
+## Maintenance
+
+Conserver le projet Apps Script existant et ses propriétés. Ne pas recréer l’installation dans un autre projet : cela créerait une nouvelle série de formulaires.
+
+installerEMLV reprend les formulaires déjà identifiés dans ce projet. afficherConfigurationEMLV affiche la configuration publique et le lien du suivi privé. finaliserRecetteEMLV corrige le lien documentaire du sujet blanc, applique le fuseau Europe/Paris et contrôle le nombre de déclencheurs.
+
+Les réponses TEST restent conservées pour la recette. Elles sont repérables par le préfixe TEST-RECETTE et doivent être exclues du bilan des étudiants.
 
 ## Lecture du suivi
-- Réception : identifiant réel de réponse Google Forms et horodatage.
-- Score objectif : QCM et calculs lisibles. Les formats à revoir sont exclus du maximum évalué et restent explicitement en attente.
-- Argumentation : lecture manuelle selon les rubriques, jamais une note automatique par mots-clés.
-- Validation enseignant : à renseigner après lecture. Un clic dans l'application ou un score partiel ne déclenche aucune validation de compétence.
-- L'identifiant étudiant et la promotion permettent de filtrer la progression sans collecter automatiquement d'adresse email.
 
-Le script n'a pas été exécuté tant que la session Google n'est pas reconnectée. La génération et la réception doivent être confirmées dans les interfaces Google avant de présenter les liens comme actifs.
+La réception est attestée par l’identifiant réel de réponse et l’horodatage. Un clic dans l’application ne vaut pas remise. Le score objectif porte sur QCM et calculs lisibles ; les formats ambigus restent en attente. Les réponses ouvertes et les méthodes nécessitent une lecture humaine. La validation finale de compétence appartient à l’enseignant.
