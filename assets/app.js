@@ -36,8 +36,8 @@ function home(){let total=DATA.modules.reduce((n,m)=>n+m.cases.length,0);return 
       <span class="course-card-top"><span>App 03</span><span aria-hidden="true">↗</span></span>
       <span class="course-card-title">Le tableau des flux de trésorerie</span>
     </a>
-    <a class="course-card" href="https://azconsultingpro.github.io/emlv-app04-ratios-financiers/" target="_blank" rel="noopener">
-      <span class="course-card-top"><span>App 04</span><span aria-hidden="true">↗</span></span>
+    <a class="course-card" href="https://azconsultingpro.github.io/emlv-app04-ratios-financiers/?v=2.1" target="_blank" rel="noopener">
+      <span class="course-card-top"><span>App 04 · Version 2.1</span><span aria-hidden="true">↗</span></span>
       <span class="course-card-title">Les ratios financiers</span>
     </a>
   </div>
